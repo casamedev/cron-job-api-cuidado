@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const axios = require('axios');
 require('dotenv').config(); // Load environment variables from .env file
 
-cron.schedule('* * * * *', async () => {
+cron.schedule('0 0 * * *', async () => {
     console.log('Running a task every minute');
 
     try {
